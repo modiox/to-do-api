@@ -31,7 +31,17 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+  /* Style for the strikethrough */
+.todo span {
+    display: inline-block;
+    width: 90%; /* Adjust as needed */
+    transition: text-decoration 0.3s ease;
+}
+
+.todo-checkbox:checked + span {
+    text-decoration: line-through;
+}
+
   .clock {
     margin-top: 30px;
     font-size: 2em;
